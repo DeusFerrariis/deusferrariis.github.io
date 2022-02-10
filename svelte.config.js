@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from 'svelte-adapter-github';
 import preprocess from 'svelte-preprocess';
 
 const dev = "production" === "development";
@@ -7,14 +7,15 @@ const dev = "production" === "development";
 const config = {
     preprocess: preprocess(),
     kit: {
-        adapter: adapter({
-            pages: "docs",
-            assets: "docs"
-        }),
-        paths: {
-            // change below to your repo name
-            base: dev ? "" : "/deusferrariis.github.io",
-        },
+            adapter: adapter({
+                    // default options are shown
+                    pages: 'docs',
+                    assets: 'docs',
+                    domain: null,
+                    jekyll: false,
+                    fallback: null,
+                    precompress: false
+            })
     }
 };
 
