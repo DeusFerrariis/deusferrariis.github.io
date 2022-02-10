@@ -1,0 +1,36 @@
+Arguments: 
+  /usr/bin/node /usr/sbin/yarn init
+
+PATH: 
+  /home/will/go/bin:/home/will/.local/bin:/home/will/.poetry/bin:/home/will/.cargo/bin:/usr/share/swift/usr/bin:/home/wcleg4-work/.cargo/bin:/home/wcleg4-work/.cargo/bin:/home/wcleg4-work/.poetry/bin:/home/wcleg4-work/.local/bin:/home/wcleg4-work/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/will/riscv64-unknown-elf-gcc-8.1.0-2019.01.0-x86_64-linux-ubuntu14/bin/riscv64-unknown-elf-gdb
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  16.2.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:137009:13)
+      at Interface.emit (node:events:365:28)
+      at Interface._ttyWrite (node:readline:1069:16)
+      at ReadStream.onkeypress (node:readline:288:10)
+      at ReadStream.emit (node:events:365:28)
+      at emitKeys (node:internal/readline/utils:358:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (node:internal/readline/emitKeypressEvents:61:36)
+      at ReadStream.emit (node:events:365:28)
+      at addChunk (node:internal/streams/readable:314:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
